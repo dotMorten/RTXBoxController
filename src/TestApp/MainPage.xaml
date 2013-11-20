@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="TestApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel Margin="40" DataContext="{Binding GamePad}">
+            <TextBlock Text="Left Thumb" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding LeftThumbX}" />
+                <TextBlock Text=", " />
+                <TextBlock Text="{Binding LeftThumbY}" />
+            </StackPanel>
+            <TextBlock Text="Right Thumb" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding RightThumbX}" />
+                <TextBlock Text=", " />
+                <TextBlock Text="{Binding RightThumbY}" />
+            </StackPanel>
+            <TextBlock Text="Right Buttons" />
+            <TextBlock Text="{Binding Buttons}" />
+            <TextBlock Text="Left trigger" />
+            <TextBlock Text="{Binding LeftTrigger}" />
+            <TextBlock Text="Right trigger" />
+            <TextBlock Text="{Binding RightTrigger}" />
+        </StackPanel>
+        
+    </Grid>
+</Page>
