@@ -15,24 +15,41 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <StackPanel Margin="40" DataContext="{Binding GamePad}">
+            
             <TextBlock Text="Left Thumb" />
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding LeftThumbX}" />
                 <TextBlock Text=", " />
                 <TextBlock Text="{Binding LeftThumbY}" />
             </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding LeftThumbXNormalized}" />
+                <TextBlock Text=", " />
+                <TextBlock Text="{Binding LeftThumbYNormalized}" />
+            </StackPanel>
+            
             <TextBlock Text="Right Thumb" />
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding RightThumbX}" />
                 <TextBlock Text=", " />
                 <TextBlock Text="{Binding RightThumbY}" />
             </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding RightThumbXNormalized}" />
+                <TextBlock Text=", " />
+                <TextBlock Text="{Binding RightThumbYNormalized}" />
+            </StackPanel>
+            
             <TextBlock Text="Right Buttons" />
             <TextBlock Text="{Binding Buttons}" />
+            
             <TextBlock Text="Left trigger" />
             <TextBlock Text="{Binding LeftTrigger}" />
+            <TextBlock Text="{Binding LeftTriggerNormalized}" />
+            
             <TextBlock Text="Right trigger" />
             <TextBlock Text="{Binding RightTrigger}" />
+            <TextBlock Text="{Binding RightTriggerNormalized}" />
         </StackPanel>
         
     </Grid>

@@ -47,7 +47,16 @@ namespace XBoxControllerAPI
 		property short RightThumbX { short get() { return m_rightThumbX; } }
 		property short RightThumbY { short get() { return m_rightThumbY; } }
 		property GamePadButtons Buttons { GamePadButtons get() { return m_buttons; } }
-		
+
+		property float LeftThumbXNormalized { float get(); }
+		property float LeftThumbYNormalized { float get(); }
+
+		property float RightThumbXNormalized { float get(); }
+		property float RightThumbYNormalized { float get(); }
+
+		property float LeftTriggerNormalized { float get(); }
+		property float RightTriggerNormalized { float get(); }
+
 	private:
 		byte m_leftTrigger;
 		byte m_rightTrigger;
